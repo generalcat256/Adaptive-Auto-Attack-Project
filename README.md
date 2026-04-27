@@ -23,3 +23,9 @@ We used the following software packages.
 
 Optional: 
 -opencv-python (for image processing if needed)
+
+# Models: 
+For the purpose of this demonstration this github attacks a TRADES-mnist trained model which is a small-CNN. 
+Full host of models is available in the following link https://pan.baidu.com/s/1_pKv2OBGplSvoNNYdYBJgA
+Extraction Code: arej
+Note you may need a mainland Chinese phone number in order to gain full access. 
