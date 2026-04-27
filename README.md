@@ -6,7 +6,9 @@ In this GitHub repository I sought to recreate the results from the paper and co
 You can download the code in this github to your python IDE of choice using the following command: 
 
 git clone https://github.com/liuye6666/adaptive_auto_attack.git
+
 %cd adaptive_auto_attack
+
 !pip install torch torchvision pandas numpy tqdm pillow -q 
 
 
