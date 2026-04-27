@@ -13,6 +13,8 @@ git clone https://github.com/liuye6666/adaptive_auto_attack.git
 !pip install torch torchvision pandas numpy tqdm pillow -q
 ```
 
+The model that this github repository is designed to run is available in the github and does not have to be downloaded from an external source. 
+
 
 # Software packages:
 We used the following software packages. 
