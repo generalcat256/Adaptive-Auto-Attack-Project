@@ -37,3 +37,8 @@ For the purpose of this demonstration this github attacks a TRADES-mnist trained
 Full host of models is available in the following link https://pan.baidu.com/s/1_pKv2OBGplSvoNNYdYBJgA
 Extraction Code: arej
 Note you may need a mainland Chinese phone number in order to gain full access. 
+
+# System Requirements: 
+I personally ran this code using google colab pro. You can also run it on university available computational clusters
+like Unity. Overall the code is designed to run on windows so you will most likely have to do a lot of troubleshooting
+if you try to run it on site on mac hardware. You will get cuda errors. 
