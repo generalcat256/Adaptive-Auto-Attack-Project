@@ -59,9 +59,11 @@ We used the following software packages.
 
 Pytorch
 
-torchvision
+torch>=1.7.1
 
-numpy
+torchvision>=0.8.2
+
+numpy>=1.19.4
 
 pandas
 
