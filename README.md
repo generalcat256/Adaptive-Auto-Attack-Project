@@ -29,7 +29,7 @@ In order to run the experimental suite I designed use the following command:
 python run_experiments.py
 ```
 
-This runs the following experiments: 
+This runs the following experiments and provides a clear table with clean accuracy, robust accuracy, and runtime: 
 
 baseline AAA
 
