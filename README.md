@@ -9,7 +9,7 @@ Current loss describes how easily attackable an image is now. Current loss – p
 
 As a small side project to the main modification I implemented, also explored different scoring strategies (pre selections) namely, loss, log loss, confidence, margin. Confidence measures how certain the model is in the correct class, while margin measures how close the model is to predicting a different class. Margin is often more informative because it directly reflects how close the input is to the decision boundary. 
 
-One limitation of this implementation is the the use of top fraction in the different loss procedures. While this may not fully capture the dynamic behavior of the original method, it preserves the core idea of prioritizing more challenging examples. 
+One limitation of this implementation is the the use of top fraction in the different loss procedures. This serves as a controlled approximation of the adaptive filtering strategy described in the original paper and may not fully capture its dynamic behavior.
 
 The primary contribution of this project is that of the different score procedure outlined in the formulation above. This alternative scoring mechanism is the main focus of the analysis and is evaluated within the simplified selection framework. I did use GPT to patch the code of the original paper with this new formulation, and commented the code to demonstrate my understanding of the major components!
 
