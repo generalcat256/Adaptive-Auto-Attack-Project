@@ -7,7 +7,7 @@ Score = current loss + 𝜆 (current loss – previous loss)
 
 Current loss describes how easily attackable an image is now. Current loss – previous loss describes how much progress we have made in attacking the image since the last step. It was my hope that this way we would be attacking images that are already high in loss, but also images that are still improving, or where the attack is still working.
 
-I also explored different scoring strategies (pre selections) namely, loss, log loss, confidence, margin. Confidence measures how certain the model is in the correct class, while margin measures how close the model is to predicting a different class. Margin is often more informative because it directly reflects how close the input is to the decision boundary. 
+As a small side project to the main modification I implemented, also explored different scoring strategies (pre selections) namely, loss, log loss, confidence, margin. Confidence measures how certain the model is in the correct class, while margin measures how close the model is to predicting a different class. Margin is often more informative because it directly reflects how close the input is to the decision boundary. 
 
 One limitation of this implementation is the the use of top fraction in the different loss procedures. While this may not fully capture the dynamic behavior of the original method, it preserves the core idea of prioritizing more challenging examples. 
 
