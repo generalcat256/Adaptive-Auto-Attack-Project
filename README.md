@@ -1,5 +1,5 @@
 # Adaptive-Auto-Attack-Project
-In this GitHub repository I sought to recreate the results from the paper and corresponding GitHub repository, "Practical Evaluation of Adversarial Robustness via Adaptive Auto Attack". I include a possible improvement over the methods described in the paper as part of our assignment.The paper has a corresponding github repository available here: https://github.com/liuye6666/adaptive_auto_attack. 
+In this GitHub repository I sought to recreate the results from the paper and corresponding GitHub repository, "_Practical Evaluation of Adversarial Robustness via Adaptive Auto Attack_". I include a possible improvement over the methods described in the paper as part of our assignment.The paper has a corresponding github repository available here: https://github.com/liuye6666/adaptive_auto_attack. 
 
 This github repository's code is designed to run a small scale experiment similar to the demonstration provided in the original git repository in addition to testing the possible improvement I implemented for the purpose of the assignment. My idea was as follows. The paper assumes: loss alone measures difficulty but this ignores whether the attack is still improving. My idea was to incorporate progress of the attack. This was achieved using the following formulation:
 
@@ -89,3 +89,7 @@ Note you may need a mainland Chinese phone number in order to gain full access.
 I personally ran this code using google colab pro. You can also run it on university available computational clusters
 like Unity. Overall the code is designed to run on windows so you will most likely have to do a lot of troubleshooting
 if you try to run it on site on mac hardware. You will get cuda errors. 
+
+# Citations: 
+
+Liu, Y., Cheng, Y., Gao, L., Liu, X., Zhang, Q., & Song, J. (2022). Practical evaluation of adversarial robustness via adaptive auto attack. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 15105-15114).
