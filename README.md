@@ -57,6 +57,11 @@ Extraction Code: arej
 
 Note you may need a mainland Chinese phone number in order to gain full access. 
 
+# Results: 
+
+<img width="1179" height="375" alt="Screenshot 2026-04-28 at 11 06 45 PM" src="https://github.com/user-attachments/assets/f30cffe6-b900-4790-823f-71b3c0db27b1" />
+
+
 # System Requirements: 
 I personally ran this code using google colab pro. You can also run it on university available computational clusters
 like Unity. Overall the code is designed to run on windows so you will most likely have to do a lot of troubleshooting
