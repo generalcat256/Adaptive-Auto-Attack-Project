@@ -19,7 +19,17 @@ Then install the dependencies:
 ```
 
 The model that this github repository is designed to run is available in the github and does not have to be downloaded from an external source. 
+In order to run the standard baseline experiment as presented in the original git repository run the following command: 
 
+```
+!python Adaptive_Auto_Attack_main.py
+```
+
+In order to run the experimental suite I designed use the following command: 
+
+```
+!python run_experiments.py
+```
 
 # Software packages:
 We used the following software packages. 
