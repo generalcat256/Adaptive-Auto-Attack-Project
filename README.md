@@ -34,11 +34,17 @@ In order to run the experimental suite I designed use the following command:
 This runs the following experiments: 
 
 baseline AAA
+
 progress-lambda scoring with lambda = 0.25
+
 progress-lambda scoring with lambda = 0.50
+
 preselection using loss
+
 preselection using log-loss
+
 preselection using confidence
+
 preselection using margin
 
 
