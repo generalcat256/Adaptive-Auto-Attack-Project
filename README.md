@@ -1,15 +1,15 @@
 # Adaptive-Auto-Attack-Project
-In this GitHub repository I sought to recreate the results from the paper and corresponding GitHub repository, "_Practical Evaluation of Adversarial Robustness via Adaptive Auto Attack_". I include a possible improvement over the methods described in the paper as part of our assignment.The paper has a corresponding github repository available here: https://github.com/liuye6666/adaptive_auto_attack. 
+In this GitHub repository I sought to recreate the results from the paper, "_Practical Evaluation of Adversarial Robustness via Adaptive Auto Attack_". I include a possible improvement over the methods described in the paper as part of our assignment. The paper has a corresponding github repository available here: https://github.com/liuye6666/adaptive_auto_attack. 
 
-This github repository's code is designed to run a small scale experiment similar to the demonstration provided in the original git repository in addition to testing the possible improvement I implemented for the purpose of the assignment. My idea was as follows. The paper assumes: loss alone measures difficulty but this ignores whether the attack is still improving. My idea was to incorporate progress of the attack. This was achieved using the following formulation:
+This GitHub repository's code is designed to run a small-scale experiment similar to the demonstration provided in the original git repository in addition to testing the possible improvement I implemented for the purpose of the assignment. My idea was as follows. The paper assumes: loss alone measures difficulty but this ignores whether the attack is still improving. My idea was to incorporate progress of the attack. This was achieved using the following formulation:
 
 Score = current loss + 𝜆 (current loss – previous loss) 
 
 Current loss describes how easily attackable an image is now. Current loss – previous loss describes how much progress we have made in attacking the image since the last step. It was my hope that this way we would be attacking images that are already high in loss, but also images that are still improving, or where the attack is still working.
 
-As a small side project to the main modification I implemented, also explored different scoring strategies (pre selections) namely, loss, log loss, confidence, margin. Confidence measures how certain the model is in the correct class, while margin measures how close the model is to predicting a different class. Margin is often more informative because it directly reflects how close the input is to the decision boundary. 
+As a small side project to the main modification I implemented, also explored different scoring strategies (pre-selections) namely, loss, log loss, confidence, margin. Confidence measures how certain the model is in the correct class, while margin measures how close the model is to predicting a different class. Margin is often more informative because it directly reflects how close the input is to the decision boundary. 
 
-One limitation of this implementation is the the use of top fraction in the different loss procedures. This serves as a controlled approximation of the adaptive filtering strategy described in the original paper and may not fully capture its dynamic behavior.
+One limitation of this implementation is the the use of the top fraction in the different loss procedures. This serves as a controlled approximation of the adaptive filtering strategy described in the original paper and may not fully capture its dynamic behavior.
 
 The primary contribution of this project is that of the different score procedure outlined in the formulation above. This alternative scoring mechanism is the main focus of the analysis and is evaluated within the simplified selection framework. I did use GPT to patch the code of the original paper with this new formulation, and commented the code to demonstrate my understanding of the major components!
 
